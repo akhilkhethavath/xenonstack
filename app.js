@@ -26,7 +26,7 @@ app.get('/',(req,res)=>{
 })
 app.use('/auth', authRoutes);
 
-app.use(authMiddleware);
+//app.use(authMiddleware);
 app.use('/properties', propertyRoutes);
 app.use('/user', userRoutes);
 // app.use('/ai', aiRoutes);
