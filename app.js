@@ -15,7 +15,11 @@ const { errorMiddleware } = require('./middlewares/errorMiddleware');
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://xenon-frontend-omega.vercel.app/',
+    methods: 'GET,POST,PUT,DELETE',
+    credentials:true,
+}));
 app.use(bodyParser.json());
 app.get('/',(req,res)=>{
     res.send("helloworld");
