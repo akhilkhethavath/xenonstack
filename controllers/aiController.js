@@ -1,5 +1,5 @@
 const Property = require('../models/Property');
-const User = require('../models/user');
+const User = require('../models/User');
 
 // AI-driven property recommendation based on user browsing history
 exports.recommendProperties = async (req, res) => {
